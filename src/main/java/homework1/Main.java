@@ -5,5 +5,6 @@ public class Main {
         TrafficLight trafficLight = new TrafficLight();
         trafficLight.getMinute();
         trafficLight.checkColor();
+        trafficLight.printColor();
     }
 }
