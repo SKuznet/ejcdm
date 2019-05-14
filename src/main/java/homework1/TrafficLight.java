@@ -4,6 +4,15 @@ import java.util.Scanner;
 
 public class TrafficLight {
     private int minute = 0;
+    private Color color;
+
+    public Color getColor(){
+        return color;
+    }
+
+    public void setColor(Color color){
+        this.color = color;
+    }
 
     public void getMinute(){
         Scanner scan = new Scanner(System.in);
@@ -22,14 +31,18 @@ public class TrafficLight {
     public void checkColor(){
         int remainder = minute % 6;
         if(remainder >= 0 && remainder <= 2){
-            System.out.println("Red");
+            setColor(Color.RED);
         } else if(remainder == 3){
-            System.out.println("Yellow");
+            setColor(Color.YELLOW);
         } else if(remainder >= 4 && remainder <= 6){
-            System.out.println("Green");
+            setColor(Color.GREEN);
         } else {
             System.out.println("Is it possible? Something went wrong >:(");
         }
+    }
+
+    public void printColor(){
+        System.out.println(color);
     }
 
 
