@@ -14,6 +14,11 @@ public class Main {
         System.out.println(name);
         String value = "";
         System.out.println(nullValue);
+        Main main = new Main();
+        System.out.println("abc".equals(main.someString()));
+    }
 
+    private String someString() {
+        return "abc";
     }
 }
