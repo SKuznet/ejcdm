@@ -7,7 +7,7 @@
 Добейтесь от меня, чтобы я добавил вас в collaborators
 
 git clone https://github.com/SKuznet/ejcdm.git
-
+git rm --cached <назване файла> 
 ## Task 1 - Semaphore
 
 Ввод с консоли минуты
