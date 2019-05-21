@@ -3,7 +3,7 @@ package homework1;
 import java.util.Scanner;
 
 public class TrafficLight {
-    private int minute = 0;
+    private int minute;
     private Color color;
 
     public Color getColor(){
