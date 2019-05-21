@@ -1,45 +1,37 @@
 package homework2;
 
-import java.util.Scanner;
+import jdk.internal.dynalink.linker.ConversionComparator;
+import sun.plugin2.message.Conversation;
 
-/**
- * 3.13. Вычислить значение логического выражения при всех возможных значениях логических величин А и В:
- * а) не (А и В);
- * б) не А или В;
- * в) А или не В.
- */
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Task3_13 {
     private static boolean a = true;
-    private static boolean b = false;
-    private static boolean x;
-    private static boolean y;
+    private static boolean b;
+    private static boolean valueX;
+    private static boolean valueY;
 
     public static void main(String[] args) {
         Task3_13 task = new Task3_13();
 
         task.getBoolean();
 
-        task.printAnsA(task, x, y);
-        task.printAnsB(task, x, y);
-        task.printAnsC(task, x, y);
+        task.printAnsA(task, valueX, valueY);
+        task.printAnsB(task, valueX, valueY);
+        task.printAnsC(task, valueX, valueY);
         System.out.println("\n");
         task.print(task);
     }
 
     private void getBoolean(){
-        Scanner scan = new Scanner(System.in);
-        if (scan.hasNextBoolean()) {
-            x = scan.nextBoolean();
-        } else{
-            System.out.println("You should add two boolean values");
-            getBoolean();
-        }
-        if (scan.hasNextBoolean()) {
-            y = scan.nextBoolean();
-        } else{
-            System.out.println("You should add two boolean values");
-            getBoolean();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        try {
+            valueX = Boolean.parseBoolean(reader.readLine().trim());
+            valueY = Boolean.parseBoolean(reader.readLine().trim());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -48,13 +40,13 @@ public class Task3_13 {
         task.printAnsA(task, a, b);
         task.printAnsA(task, b, a);
         task.printAnsA(task, b, b);
-        System.out.println("-----------------------");
+        System.out.println("-------------------------");
 
         task.printAnsB(task, a, a);
         task.printAnsB(task, a, b);
         task.printAnsB(task, b, a);
         task.printAnsB(task, b, b);
-        System.out.println("-----------------------");
+        System.out.println("-------------------------");
 
         task.printAnsC(task, a, a);
         task.printAnsC(task, a, b);

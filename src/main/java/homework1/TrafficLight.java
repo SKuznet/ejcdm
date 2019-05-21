@@ -1,6 +1,8 @@
 package homework1;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class TrafficLight {
     private int minute;
@@ -15,15 +17,18 @@ public class TrafficLight {
     }
 
     public void getMinute(){
-        Scanner scan = new Scanner(System.in);
-        if (scan.hasNextInt()) {
-            minute = scan.nextInt();
-        } else {
-            System.out.println("Sorry, but it's totally not an integer. Please, try again!");
-            getMinute();
-        }
-        if (minute < 0){
-            System.out.println("Number should be positive. Please, try again!");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        try {
+            minute = Integer.parseInt(reader.readLine().trim());
+            if (minute < 0) {
+                System.out.println("Number should be positive. Please, try again!");
+                getMinute();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (NumberFormatException e) {
+            e.getMessage();
+            System.err.println("Error. It's totally not an integer. Please, try again!");
             getMinute();
         }
     }
@@ -37,13 +42,11 @@ public class TrafficLight {
         } else if(remainder >= 4 && remainder <= 6){
             setColor(Color.GREEN);
         } else {
-            System.out.println("Is it possible? Something went wrong >:(");
+            System.out.println("Is it possible? You ruined everything!");
         }
     }
 
     public void printColor(){
         System.out.println(color);
     }
-
-
 }

@@ -1,54 +1,38 @@
 package homework2;
 
-import java.util.Scanner;
-
-/**
- * Вычислить значение логического выражения при всех возможных значениях логических величин X, Y и Z:
- * а) не (Y или не X и Z) или Z;
- * б) X и не (не Y или Z) или Y;
- * в) не (X или Y и Z) или не X.
- */
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Task3_24 {
     private static boolean a = true;
-    private static boolean b = false;
+    private static boolean b;
 
-    private static boolean x;
-    private static boolean y;
-    private static boolean z;
+    private static boolean valueX;
+    private static boolean valueY;
+    private static boolean valueZ;
 
     public static void main(String[] args) {
         Task3_24 task = new Task3_24();
 
         task.getBoolean();
 
-        task.printAnsA(task, x, y, z);
-        task.printAnsB(task, x, y, z);
-        task.printAnsC(task, x, y, z);
+        task.printAnsA(task, valueX, valueY, valueZ);
+        task.printAnsB(task, valueX, valueY, valueZ);
+        task.printAnsC(task, valueX, valueY, valueZ);
         System.out.println("\n");
 
         task.print(task);
 }
 
     private void getBoolean(){
-        Scanner scan = new Scanner(System.in);
-        if (scan.hasNextBoolean()) {
-            x = scan.nextBoolean();
-        } else{
-            System.out.println("You should add three boolean values");
-            getBoolean();
-        }
-        if (scan.hasNextBoolean()) {
-            y = scan.nextBoolean();
-        } else{
-            System.out.println("You should add three boolean values");
-            getBoolean();
-        }
-        if (scan.hasNextBoolean()) {
-            z = scan.nextBoolean();
-        } else{
-            System.out.println("You should add three boolean values");
-            getBoolean();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        try {
+            valueX = Boolean.parseBoolean(reader.readLine().trim());
+            valueY = Boolean.parseBoolean(reader.readLine().trim());
+            valueZ = Boolean.parseBoolean(reader.readLine().trim());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -61,7 +45,7 @@ public class Task3_24 {
         task.printAnsA(task, b, a, b);
         task.printAnsA(task, b, b, a);
         task.printAnsA(task, b, b, b);
-        System.out.println("----------------------------------------------");
+        System.out.println("-------------------------------------");
 
         task.printAnsB(task, a, a, a);
         task.printAnsB(task, a, a, b);
@@ -71,7 +55,7 @@ public class Task3_24 {
         task.printAnsB(task, b, a, b);
         task.printAnsB(task, b, b, a);
         task.printAnsB(task, b, b, b);
-        System.out.println("----------------------------------------------");
+        System.out.println("-------------------------------------");
 
         task.printAnsC(task, a, a, a);
         task.printAnsC(task, a, a, b);
