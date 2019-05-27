@@ -36,7 +36,7 @@ public class Cat {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, description);
+        return id;
     }
 
     public int getId() {
