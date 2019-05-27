@@ -51,9 +51,13 @@ git rm --cached <назване файла>
 
 1) HashMap - заодно почитать про Map и HashMap и TreeMap
 
-Добавить в него Котов, в котах переопределить equals и hashcode - таким образом, чтобы hashcode был всегда равен 1
-Добить коллизии. Потерять элемент - потом создать новый HashMap - добавить туда весь предыдущий hashmap - найти элемент 
+а) Добавить в него Котов, в котах переопределить equals и hashcode - таким образом, чтобы hashcode был всегда равен 1.
+Добиться коллизии. 
+б) (переопределить hashcode и equals по полям) Потерять элемент - потом создать новый HashMap - добавить туда весь предыдущий hashmap - найти элемент 
 в новой мапе.
+
+## Task 5 - выбрать любые два вопроса из OCP(1 глава) - OCP_Oracle_Certified_Professional_Java_SE_8_Programmer_II_Study_Guide_Exam_1Z0-809
+
 
 https://youtu.be/iuea1F7qSTw
 https://youtu.be/JJEzvQUNgBI
