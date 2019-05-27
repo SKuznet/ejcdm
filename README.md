@@ -61,4 +61,7 @@ git rm --cached <назване файла>
 
 https://youtu.be/iuea1F7qSTw
 https://youtu.be/JJEzvQUNgBI
+https://youtu.be/1D0LcC-jHyI
+https://youtu.be/-3KCK44WGZE
+https://youtu.be/P7SyL41Htmk
 
