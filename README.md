@@ -58,10 +58,15 @@ git rm --cached <назване файла>
 
 ## Task 5 - выбрать любые два вопроса из OCP(1 глава) - OCP_Oracle_Certified_Professional_Java_SE_8_Programmer_II_Study_Guide_Exam_1Z0-809
 
+## Task 6 - Сделать Functional Interface - MathOperate - с методом принимающим 2 параметра, сделать через лямбду операции 
+с данными параметрами и добавить default method с получением какой то информации о интерфейсе
 
 https://youtu.be/iuea1F7qSTw
 https://youtu.be/JJEzvQUNgBI
 https://youtu.be/1D0LcC-jHyI
 https://youtu.be/-3KCK44WGZE
 https://youtu.be/P7SyL41Htmk
+https://youtu.be/yRQUJvxrsTI
+
+
 
