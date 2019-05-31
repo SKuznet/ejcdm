@@ -68,5 +68,7 @@ https://youtu.be/-3KCK44WGZE
 https://youtu.be/P7SyL41Htmk
 https://youtu.be/yRQUJvxrsTI
 
+## Task 7 Head First design patterns - 1 глава (паттерн стратегия) * - сделать реализацию с утками - запушить.
+
 
 
