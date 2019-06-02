@@ -1,9 +1,6 @@
 package lesson9;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -56,27 +53,19 @@ public class Main {
 
 //
 //        System.out.println(array[1]);
-//        Set<Cat> set = new HashSet<>();
+        Set<Cat> set = new HashSet<>();
 //
         Cat barsik = new Cat(1, "Barsik", "good");
-        System.out.println(barsik);
+
+        set.add(barsik);
 //
-//        System.out.println(barsik.hashCode());
-//        set.add(barsik);
-//
-//        System.out.println(set.contains(barsik));
-//        barsik.setDescription("angry");
-//
-//        System.out.println(barsik.hashCode());
-//        System.out.println(set.contains(barsik));
-//
-//        set.add(barsik);
-//        System.out.println(set.contains(barsik));
-//
-//        System.out.println(set);
-//
-//        Set<Cat> newSet = new HashSet<>(set);
-//        System.out.println(newSet);
+        System.out.println(set.contains(barsik));
+        barsik.setDescription("angry");
+        set.add(barsik);
+        System.out.println(set);
+
+        Set<Cat> newSet = new HashSet<>(set);
+        System.out.println(newSet);
 
     }
 }
