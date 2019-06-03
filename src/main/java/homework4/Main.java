@@ -21,10 +21,12 @@ public class Main {
 
         map.put(barsik, "Barsik");
         System.out.println(map.containsKey(barsik));
+        map.put(barsik, "Barsik");
 
-        System.out.println(map);
+        System.out.println("map: \n" + map);
 
         Map<Cat, String> newMap = new HashMap<>(map);
-        System.out.println(newMap);
+        System.out.println("newMap: \n" + newMap);
+        System.out.println(newMap.containsKey(barsik));
     }
 }
