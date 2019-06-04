@@ -15,14 +15,7 @@ public class Interf {
         MatchOperate div = (a, b) -> a / b;
         MatchOperate multiply = (a, b) -> a * b;
         MatchOperate subtraction = (a, b) -> a - b;
-//        List<MatchOperate> operate= new ArrayList<>();
-//        operate.add(sum);
-//        operate.add(div);
-//        operate.add(multiply);
-//        operate.add(subtraction);
-//        for (int i = 0; i < operate.size(); i++) {
-//            System.out.println(operate.get(i));
-//        }
+
         System.out.println(sum.apply(20, 10));
         System.out.println(multiply.apply(20, 10));
         System.out.println(div.apply(20, 10));
