@@ -17,8 +17,8 @@ public class TrafficLight {
     }
 
     public void getMinute(){
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        try {
+
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             minute = Integer.parseInt(reader.readLine().trim());
             if (minute < 0) {
                 System.out.println("Number should be positive. Please, try again!");

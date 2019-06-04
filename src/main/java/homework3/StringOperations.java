@@ -34,8 +34,7 @@ public class StringOperations {
     }
 
     private void setIndexes(){
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        try {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             System.out.println("Add start and end indexes of reversing part.");
             startIndex = Integer.parseInt(reader.readLine().trim());
             endIndex = Integer.parseInt(reader.readLine().trim());

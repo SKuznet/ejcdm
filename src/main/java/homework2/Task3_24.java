@@ -26,8 +26,7 @@ public class Task3_24 {
 }
 
     private void getBoolean(){
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        try {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             valueX = Boolean.parseBoolean(reader.readLine().trim());
             valueY = Boolean.parseBoolean(reader.readLine().trim());
             valueZ = Boolean.parseBoolean(reader.readLine().trim());

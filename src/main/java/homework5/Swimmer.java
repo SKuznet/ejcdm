@@ -1,8 +1,6 @@
 package homework5;
 
-import lesson4.Animal;
-
-public class Swimmer {
+/*public class Swimmer {
     enum AnimalClasses {
         MAMMAL, FISH {
             public boolean hasFins(){return true;}},
@@ -17,3 +15,4 @@ public class Swimmer {
         System.out.println(AnimalClasses.BIRD.hasFins());
     }
 }
+*/
