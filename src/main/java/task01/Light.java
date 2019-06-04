@@ -1,4 +1,4 @@
-package homeWorkd01;
+package task01;
 
 import java.util.Scanner;
 
@@ -33,3 +33,5 @@ public class Light {
         }
     }
 }
+
+
