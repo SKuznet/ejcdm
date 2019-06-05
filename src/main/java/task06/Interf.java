@@ -18,7 +18,7 @@ public class Interf {
         opa.put("Multiplication", (a, b) -> a * b);
         opa.put("Minus", (a, b) -> a - b);
         for (Map.Entry<String, MatchOperate> entry : opa.entrySet()) {
-            System.out.println(entry.getKey() +"= "+ entry.getValue().apply(firstNum, secondNum));
+            System.out.println(entry.getKey() + "= " + entry.getValue().apply(firstNum, secondNum));
         }
     }
 }
