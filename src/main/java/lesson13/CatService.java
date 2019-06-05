@@ -3,6 +3,7 @@ package lesson13;
 import java.util.concurrent.TimeUnit;
 
 public class CatService {
+
     public CatService() {
         try {
             TimeUnit.MILLISECONDS.sleep(4);
@@ -11,11 +12,8 @@ public class CatService {
         }
     }
 
-    private String message = "some message from will to pirate!";
-
     public long getTimeOfCats(long ownTime) {
-
-        System.out.println(message);
+        System.out.println("show something...");
 
         if(ownTime > 0) {
             // logic
