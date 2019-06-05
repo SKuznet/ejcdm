@@ -3,6 +3,7 @@ package lesson13;
 import java.util.concurrent.TimeUnit;
 
 public class CatService {
+    private static final String MESSAGE = "show something...";
 
     public CatService() {
         try {
@@ -11,9 +12,10 @@ public class CatService {
             e.printStackTrace();
         }
     }
+    
 
     public long getTimeOfCats(long ownTime) {
-        System.out.println("show something...");
+        System.out.println(MESSAGE);
 
         if(ownTime > 0) {
             // logic
