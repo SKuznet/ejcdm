@@ -11,7 +11,12 @@ public class CatService {
         }
     }
 
+    private String message = "some message from will to pirate!";
+
     public long getTimeOfCats(long ownTime) {
+
+        System.out.println(message);
+
         if(ownTime > 0) {
             // logic
             return System.currentTimeMillis() - ownTime;
