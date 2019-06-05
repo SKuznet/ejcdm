@@ -1,8 +1,8 @@
 package task06;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 @FunctionalInterface
 interface MatchOperate {
@@ -11,14 +11,23 @@ interface MatchOperate {
 
 public class Interf {
     public static void main(String[] args) {
-        MatchOperate sum = (a, b) -> a / b;
-        MatchOperate div = (a, b) -> a / b;
-        MatchOperate multiply = (a, b) -> a * b;
-        MatchOperate subtraction = (a, b) -> a - b;
+        Scanner in = new Scanner(System.in);
+        float firstNum = in.nextFloat();
+        float secondNum = in.nextFloat();
+        List<MatchOperate> operation = new ArrayList<>();
+        operation.add((a, b) -> a + b);
+        operation.add((a, b) -> a / b);
+        operation.add((a, b) -> a * b);
+        operation.add((a, b) -> a - b);
 
-        System.out.println(sum.apply(20, 10));
-        System.out.println(multiply.apply(20, 10));
-        System.out.println(div.apply(20, 10));
-        System.out.println(subtraction.apply(20, 10));
+        List<String> description = new ArrayList<>();
+        description.add("Sum= ");
+        description.add("Div= ");
+        description.add("Multiplication= ");
+        description.add("Minus= ");
+
+        for (int i = 0; i < operation.size(); i++) {
+            System.out.println(description.get(i) + operation.get(i).apply(firstNum, secondNum));
+        }
     }
 }
