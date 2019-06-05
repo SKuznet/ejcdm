@@ -13,12 +13,12 @@ public class CatService {
     }
 
     public long getTimeOfCats(long ownTime) {
-        System.out.println("show something...");
-
         if(ownTime > 0) {
             // logic
             return System.currentTimeMillis() - ownTime;
         }
+
+        System.out.println("message should be there!");
 
         throw new IllegalArgumentException("own time can't be negative or zero");
     }
