@@ -1,8 +1,6 @@
 package task06;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 @FunctionalInterface
 interface MatchOperate {
@@ -14,20 +12,14 @@ public class Interf {
         Scanner in = new Scanner(System.in);
         float firstNum = in.nextFloat();
         float secondNum = in.nextFloat();
-        List<MatchOperate> operation = new ArrayList<>();
-        operation.add((a, b) -> a + b);
-        operation.add((a, b) -> a / b);
-        operation.add((a, b) -> a * b);
-        operation.add((a, b) -> a - b);
-
-        List<String> description = new ArrayList<>();
-        description.add("Sum= ");
-        description.add("Div= ");
-        description.add("Multiplication= ");
-        description.add("Minus= ");
-
-        for (int i = 0; i < operation.size(); i++) {
-            System.out.println(description.get(i) + operation.get(i).apply(firstNum, secondNum));
+        Map<String, MatchOperate> opa = new HashMap<>();
+        opa.put("Sum= ", (a, b) -> a + b);
+        opa.put("Div= ", (a, b) -> a / b);
+        opa.put("Multiplication= ", (a, b) -> a * b);
+        opa.put("Minus= ", (a, b) -> a - b);
+        for (Map.Entry<String, MatchOperate> entry : opa.entrySet()) {
+            System.out.println(entry.getKey() + entry.getValue().apply(firstNum, secondNum));
         }
     }
 }
+
