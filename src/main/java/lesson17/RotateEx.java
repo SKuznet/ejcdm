@@ -2,7 +2,6 @@ package lesson17;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.EnumSet;
 import java.util.List;
 
 public class RotateEx {
@@ -15,6 +14,5 @@ public class RotateEx {
 
         Collections.rotate(list, 1);
         System.out.println(list);
-
     }
 }
