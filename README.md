@@ -93,4 +93,6 @@ https://youtu.be/hNw2GgUUcLs
 
 https://youtu.be/-9YSXaD2Sns 
 
+## OCA - 5 chapter - разобрать все вопросы - выбрать 2 самых интересных на ваш взгляд и добавить их в свою ветку 
+
 
