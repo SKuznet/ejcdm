@@ -94,6 +94,7 @@ https://youtu.be/hNw2GgUUcLs
 https://youtu.be/-9YSXaD2Sns 
 
 ## OCA - 5 chapter - разобрать все вопросы - выбрать 2 самых интересных на ваш взгляд и добавить их в свою ветку
-Проверить дз того кто ниже вас по списку - https://docs.google.com/spreadsheets/d/1ZTd8aRqlG4qre7YKsRUvNGw0ho4zwD15CM6hJ6iE6W0/edit?usp=sharing 
+Проверить дз того кто ниже вас по списку - https://docs.google.com/spreadsheets/d/1ZTd8aRqlG4qre7YKsRUvNGw0ho4zwD15CM6hJ6iE6W0/edit?usp=sharing
+https://youtu.be/_g1u_DieMK0 
 
 
