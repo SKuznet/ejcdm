@@ -1,4 +1,4 @@
-package homework10;
+package preparation.OCA.Chapter4;
 
 public class Rope {
     public static void swing(){

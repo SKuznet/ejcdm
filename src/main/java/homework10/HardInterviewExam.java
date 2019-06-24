@@ -1,9 +1,9 @@
-package homework11;
+package homework10;
 
-public class EasyInterviewExam implements Interviewable{
+public class HardInterviewExam implements Interviewable{
     @Override
     public int getInterviewPoints(int luck) {
-        int points = 99 * luck;
+        int points = 52 * luck;
 
         if (points > 100){
             return 100;
@@ -14,4 +14,3 @@ public class EasyInterviewExam implements Interviewable{
         }
     }
 }
-

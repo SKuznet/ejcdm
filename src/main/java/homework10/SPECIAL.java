@@ -1,4 +1,4 @@
-package homework11;
+package homework10;
 
 public class SPECIAL {
     private int strength;

@@ -1,4 +1,4 @@
-package homework10;
+package preparation.OCA.Chapter4;
 
 public class RopeSwing {
     private static final String leftRope;
