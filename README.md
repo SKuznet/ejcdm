@@ -118,7 +118,9 @@ class Cat {
 | --- | ---|
 | Barsik | Sharik |
 
-![yandex](http://yandex.ru)
+![yandex](https://img2.goodfon.ru/original/2560x1440/6/58/cat-kittens-kotenok-ryzhiy.jpg)
 
+[I'm an inline-style link](https://www.google.com)
 
+---
 
