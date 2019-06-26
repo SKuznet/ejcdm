@@ -113,7 +113,10 @@ class Cat {
         System.out.println("asd");
     }
 }
-
 ```
+| Cat | DOG |
+| --- | ---|
+| Barsik | Sharik |
+
 
 
