@@ -118,5 +118,7 @@ class Cat {
 | --- | ---|
 | Barsik | Sharik |
 
+![yandex](http://yandex.ru)
+
 
 
