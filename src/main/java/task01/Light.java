@@ -10,7 +10,6 @@ public class Light {
             int num;
             Math.floor(num1);
             num = (int) num1;
-
             switch (num % 6) {
                 case 0:
                 case 5:

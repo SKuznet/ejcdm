@@ -3,25 +3,24 @@ package task03;
 public class Strings01 {
     public static void main(String[] args) {
         String s;
-        s = "asfa[ofsa[ofba[ofbasfab[f";
+        s = "012[3456[789";
+        System.out.println(s);
         s = s.replace("[", "");
         System.out.println(s);
         // revers from 3 to 10
-        int a = 3;
-        int b = 10;
-        int b1 = b - 1;
-        char k;
+        int firstElementRevers = 3;
+        int lastElementRevers = 10;
+        // b1 Last element for revers decreases with each iteration
+        int b1 = lastElementRevers - 1;
+        char reverse;
         char[] str = s.toCharArray();
-        if ((a > 0) && (b <= s.length())) {
-            for (int i = a - 1; i < b - 1; i++) {
-                if (i < b1) {
-                    k = str[i];
-                    str[i] = str[b1];
-                    str[b1] = k;
-                    b1--;
-                } else {
-                    break;
-                }
+        if ((firstElementRevers > 0) && (lastElementRevers <= s.length())) {
+            //swap the first and the last element
+            for (int i = firstElementRevers - 1; i < lastElementRevers - 1 && (i < b1); i++) {
+                reverse = str[i];
+                str[i] = str[b1];
+                str[b1] = reverse;
+                b1--;
             }
             System.out.println(str);
         } else {

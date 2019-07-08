@@ -3,6 +3,10 @@ package task04;
 import java.util.Objects;
 
 public class CatColliz {
+    private int id;
+    private String name;
+    private String description;
+
     CatColliz(int id, String name, String description) {
         this.id = id;
         this.name = name;
@@ -13,29 +17,25 @@ public class CatColliz {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Cat cat = (Cat) o;
-        return id == cat.id &&
-                Objects.equals(name, cat.name) &&
-                Objects.equals(description, cat.description);
-    }
-
-    @Override
-    public int hashCode() {
-        return 1;
+        CatColliz catColliz = (CatColliz) o;
+        return id == catColliz.id &&
+                Objects.equals(name, catColliz.name) &&
+                Objects.equals(description, catColliz.description);
     }
 
     @Override
     public String toString() {
-        return "Cat{" +
+        return "CatColliz{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 '}';
     }
 
-    int id;
-    String name;
-    String description;
+    @Override
+    public int hashCode() {
+        return 1;
+    }
 
     public int getId() {
         return id;

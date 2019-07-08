@@ -1,9 +1,9 @@
-package classWork_17_06_2019;
+package task10;
 
 import java.util.List;
 import java.util.Map;
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         Map<String, Object> bestScore_and_ArrayScore;
         bestScore_and_ArrayScore = Score.getSoreMaxValue();
@@ -11,7 +11,6 @@ public class Main {
         listNameGetName = Names.getNames();
         System.out.println("Number winner=" + bestScore_and_ArrayScore.get("Number winner"));
         System.out.println("Max points=" + bestScore_and_ArrayScore.get("Max points"));
-
         System.out.println("Name winner=" + (listNameGetName.get(((int) bestScore_and_ArrayScore.get("Number winner")) - 1)));
         int[][] arrayPoint = (int[][]) Score.getSoreMaxValue().get("Get all points");
         for (int l = 0; l < 20; l++) {

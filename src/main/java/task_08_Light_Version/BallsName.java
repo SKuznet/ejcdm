@@ -2,7 +2,7 @@ package task_08_Light_Version;
 
 import java.util.Objects;
 
- class BallsName implements Comparable<BallsName> {
+class BallsName implements Comparable<BallsName> {
     private int id;
     private int centre;
 
@@ -44,16 +44,13 @@ import java.util.Objects;
         return Objects.hash(id);
     }
 
-
     public int getCentre() {
         return centre;
     }
 
-
     public void setCentre(int centre) {
         this.centre = centre;
     }
-
 
     public int getId() {
         return id;
@@ -62,6 +59,4 @@ import java.util.Objects;
     public void setId(int id) {
         this.id = id;
     }
-
-
 }

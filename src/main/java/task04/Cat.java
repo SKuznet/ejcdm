@@ -3,6 +3,10 @@ package task04;
 import java.util.Objects;
 
 public class Cat {
+    private int id;
+    private String name;
+    private String description;
+
     Cat(int id, String name, String description) {
         this.id = id;
         this.name = name;
@@ -32,10 +36,6 @@ public class Cat {
                 ", description='" + description + '\'' +
                 '}';
     }
-
-    int id;
-    String name;
-    String description;
 
     public int getId() {
         return id;

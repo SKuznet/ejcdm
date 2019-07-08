@@ -5,6 +5,10 @@ import java.util.*;
 @FunctionalInterface
 interface MatchOperate {
     float apply(float a, float b);
+
+    static void getInfo() {
+        System.out.println("You are using MathOperate interface!");
+    }
 }
 
 public class Interf {
@@ -20,6 +24,8 @@ public class Interf {
         for (Map.Entry<String, MatchOperate> entry : opa.entrySet()) {
             System.out.println(entry.getKey() + "= " + entry.getValue().apply(firstNum, secondNum));
         }
+        MatchOperate.getInfo();
     }
+
 }
 

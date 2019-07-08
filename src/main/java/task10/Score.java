@@ -1,4 +1,4 @@
-package classWork_17_06_2019;
+package task10;
 
 import java.util.*;
 
