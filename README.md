@@ -99,34 +99,14 @@ https://youtu.be/-9YSXaD2Sns
 Проверить дз того кто ниже вас по списку - https://docs.google.com/spreadsheets/d/1ZTd8aRqlG4qre7YKsRUvNGw0ho4zwD15CM6hJ6iE6W0/edit?usp=sharing
 https://youtu.be/_g1u_DieMK0 
 
+## Task 11 - the last! possible
+ООП - (Фабричный метод или абстрактная фабрика для создания банкомата). У вас будет несколько банкоматов или возможность
+снимать одновременно деньги с одного счета. Покрыть это тестами. Сделать документацию на банкомат.
+Дать возможность вводить деньги в систему с консоли, проверять баланс, снимать деньги(параллельно в рандоме - кто то другой будет пытаться 
+снять деньги или положить деньги на ваш счет). * опционально возможноть покупать моментальные лотерейные билеты (
+банк не должен обанкротиться + реклама)
+Happens before **
 
-# Task
-## Task
-### Task
-#### Task
-##### Task
-###### Task
+## OCP - 8 chapter - прочитать, сделать примеры, разобрать вопросы, выбрать два любых вопроса и запушить к себе
 
-```java
-class Cat {
-    public static void main(String[] args) {
-        System.out.println("asd");
-    }
-}
-```
-| Cat | DOG |
-| --- | ---|
-| Barsik | Sharik |
-
-![yandex](https://img2.goodfon.ru/original/2560x1440/6/58/cat-kittens-kotenok-ryzhiy.jpg)
-
-[I'm an inline-style link](https://www.google.com)
-
----
-
-* task1
-* task2
-    * subtask1
-        * susubtask1
-* task 3
 
