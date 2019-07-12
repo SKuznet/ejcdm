@@ -21,6 +21,4 @@ class Main {
             System.out.println("  " + ((List) (bestScore_and_ArrayScore.get("Sum for 5 test"))).get(l));
         }
     }
-
-
 }
