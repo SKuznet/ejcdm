@@ -16,7 +16,7 @@ public class Game {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             while(attempts != 0) {
                 System.out.println("Choose the ball from 0 to 19.");
-                int ballId = Integer.parseInt(reader.readLine());
+                int ballId = Integer.parseInt(reader.readLine().trim());
                 Set<Ball> set = bowling.balls;
                 if(ballId == 2 || ballId == 7 ){
                     set = bowling.fakeBalls;
