@@ -1,10 +1,11 @@
 package task_08_Light_Version;
 
+
 import java.util.*;
 
 class CollectionBalls {
-    static Set<BallsName> createBallsBad() {
-        Set<BallsName> ballsBad = new TreeSet<>(BallsName::compareTo);
+    static TreeSet<BallsName> createBallsBad() {
+        TreeSet<BallsName> ballsBad = new TreeSet<>(BallsName::compareTo);
         ballsBad.add(new BallsName(2, 15));
         ballsBad.add(new BallsName(7, 15));
         return ballsBad;
