@@ -48,7 +48,6 @@ public class RealizationRacing implements Runnable {
                 money = money - wager;
                 System.out.println("You lose, your money " + money);
             }
-
             if (money < 1) {
                 System.out.println("Sorry you not have money and you can not continue in the game");
             } else {

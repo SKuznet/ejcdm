@@ -26,7 +26,6 @@ public class Horse extends CreateHorse implements Runnable {
         this.name = name;
     }
 
-
     private int getMaxSpeed() {
         return maxSpeed;
     }
@@ -34,7 +33,6 @@ public class Horse extends CreateHorse implements Runnable {
     public void setMaxSpeed(int maxSpeed) {
         this.maxSpeed = maxSpeed;
     }
-
 
     public int getId() {
         return id;
@@ -88,7 +86,6 @@ public class Horse extends CreateHorse implements Runnable {
         }
         DataCyclicBarrier.dataHorseInTheRun.add(dataHorseInTheRun);
         DataCyclicBarrier.dataHorseInTheFinish.add(dataOneRun);
-
         try {
             bar.await();
         } catch (BrokenBarrierException | InterruptedException exc) {
