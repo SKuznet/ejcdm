@@ -5,28 +5,23 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Game {
-
     private Hippodrome hippodrome;
     private int nHorses = 4;
-    private int pause = 200;
+    private int pause = 1;
     private Player player = new Player(1);
 
     public void play(){
-
         Names[] names = Names.values();
-
         System.out.println("Greetings and welcome to our brand new hippodrome!");
         System.out.println("Your balance is: " + player.getMoney());
         System.out.println("Choose a horse (add a number from 0 to " + (nHorses - 1) + "):");
-
         for(Names n : names){
             System.out.println(n);
         }
 
-
-
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             int horseNumber = Integer.parseInt(reader.readLine().trim());
+
             if(horseNumber >= 0 && horseNumber < nHorses){
                 player.setFavorite(names[horseNumber].name());
             } else {
@@ -35,20 +30,16 @@ public class Game {
 
             System.out.println(" Please, make a bet.");
             player.setBet(Integer.parseInt(reader.readLine().trim()));
+
             if(!makeBet(player.getBet())){
                 throw new IllegalArgumentException();
             }
+
             hippodrome = new Hippodrome(nHorses, pause, player);
-            if(player.getWin()){
-                player.setMoney(player.getMoney() + player.getBet());
-                System.out.println("Congratulations! You got " + player.getBet() + " money!");
-            } else {
-                player.setMoney(player.getMoney() - player.getBet());
-                System.out.println("You lost :(");
-            }
+
             System.out.println("Do you wanna play again?(Y - yes, N - no)");
             String s = reader.readLine().trim();
-            while(!s.equalsIgnoreCase("Y") || !s.equalsIgnoreCase("N")) {
+            while(!s.equalsIgnoreCase("Y") && !s.equalsIgnoreCase("N")) {
                 System.out.println("Wrong token. Try again.");
                 s = reader.readLine().trim();
             }
@@ -56,7 +47,6 @@ public class Game {
             if(s.equalsIgnoreCase("Y")){
                 play();
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         } catch (IllegalArgumentException e){
