@@ -7,7 +7,6 @@ public class RealizationRacing implements Runnable {
     @Override
     public void run() {
         //read
-        //
         Scanner in = new Scanner(System.in);
         System.out.println("Do you want to play. Write yes or no");
         String wantToPlay = in.next();
