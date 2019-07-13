@@ -13,7 +13,7 @@ public class Sber implements ATM{
 
     private final Object key = new Object();
 
-    public void getMoney(int amount, int atmId){
+    public void getMoney(int amount){
         synchronized (key) {
             if (amount <= money) {
                 try {
@@ -22,14 +22,14 @@ public class Sber implements ATM{
                     e.printStackTrace();
                 }
                 money -= amount;
-                System.err.println("All Ok. From atm " + atmId + " you got " + amount + ". Money left " + money);
+                System.err.println("All Ok. You got " + amount + ". Money left " + money);
             } else {
                 System.err.println("Not enough money");
             }
         }
     }
 
-    public void addMoney(int amount, int atmId){
+    public void addMoney(int amount){
         synchronized (key) {
             try {
                 TimeUnit.MILLISECONDS.sleep(1);
@@ -37,7 +37,7 @@ public class Sber implements ATM{
                 e.printStackTrace();
             }
             money += amount;
-            System.err.println("All Ok. From atm " + atmId + " you add " + amount + ". Money left " + money);
+            System.err.println("All Ok. You add " + amount + ". Money left " + money);
         }
     }
 
