@@ -13,7 +13,7 @@ public class Main {
             public void run() {
                 System.err.println("Sber");
                sber.getMoney(1000);
-               sber.getBalance();
+               sber.getAtmBalance();
             }
         }).start();
 
@@ -30,6 +30,7 @@ public class Main {
             public void run() {
                 System.err.println("Alfa");
                 alfa.addMoney(10000000);
+                alfa.getBankBalance();
             }
         }).start();
     }
